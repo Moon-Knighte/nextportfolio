@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { MovingBorderBtn } from "./ui/moving-border";
 
 const HeroSection = () => {
   return (
@@ -29,16 +30,23 @@ const HeroSection = () => {
           </div>
         </Link>
       </div>
-      <div className="w-72 h-72 space-x-3 space-y-3 -rotate-[30deg] relative">
-        <div className="flex gap-3 translate-x-8">
-          <div className="w-20 h-20 rounded-2xl bg-yellow-500"></div>
-          <div className="w-20 h-20 rounded-full bg-red-500"></div>
+      <div className="relative">
+        <div className="w-72 h-72 space-x-3 space-y-3 -rotate-[30deg] relative">
+          <div className="flex gap-3 translate-x-8">
+            <div className="w-20 h-20 rounded-2xl bg-yellow-500"></div>
+            <div className="w-20 h-20 rounded-full bg-red-500"></div>
+          </div>
+          <div className="flex gap-3 -translate-x-8">
+            <div className="w-20 h-20 rounded-2xl bg-red-500"></div>
+            <div className="w-24 h-24 rounded-full bg-yellow-500"></div>
+          </div>
+          <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
         </div>
-        <div className="flex gap-3 -translate-x-8">
-          <div className="w-20 h-20 rounded-2xl bg-red-500"></div>
-          <div className="w-24 h-24 rounded-full bg-yellow-500"></div>
+        <div className="absolute bottom-16 sm:bottom-14 left-0 sm:-left-10">
+          <MovingBorderBtn borderRadius="1rem" className="p-3 font-semibold">
+            <p> 💻 Available for work</p>
+          </MovingBorderBtn>
         </div>
-        <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
       </div>
     </div>
   );

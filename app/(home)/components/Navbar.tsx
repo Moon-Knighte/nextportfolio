@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="py-4 px-10 flex justify-between items-center">
       <h1 className="text-xl font-semibold underline underline-offset-8 decoration-yellow-500 -rotate-12">
-        Anjan Basnet (🇳🇵)
+        Anjan Basnet, 🇳🇵
       </h1>
       <div className="flex gap-5">
         {socials.map((social, index) => {
