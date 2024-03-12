@@ -1,8 +1,9 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin, FaFreeCodeCamp } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ className }: { className?: string }) => {
   const socials = [
     {
       Link: "https://www.linkedin.com/in/anjan-basnet-b79680237/",
@@ -22,7 +23,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="py-4 px-10 flex justify-between items-center">
+    <nav
+      className={cn("py-4 px-10 flex justify-between items-center", className)}
+    >
       <h1 className="text-xl font-semibold underline underline-offset-8 decoration-yellow-500 -rotate-12">
         Anjan Basnet, 🇳🇵
       </h1>
