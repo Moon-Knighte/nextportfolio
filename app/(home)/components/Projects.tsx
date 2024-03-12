@@ -64,7 +64,7 @@ const Projects = () => {
                   imageUrl={project.cover}
                 >
                   <div className="space-y-5">
-                    <h1 className="font-bold text-2xl text-gray-500">
+                    <h1 className="font-bold text-2xl text-lime-500">
                       {project.title}
                     </h1>
 

@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     title: "Anjan Basnet",
     description: "Web Dev NP",
 
-    images: "/1.png",
+    images: "/profile.jpg",
   },
-  keywords: ["daily web coding", "Anjan Basnet", "dailywebcoding"],
+  keywords: ["Programmer", "Anjan Basnet", "coding in ts"],
 };
 
 export default function RootLayout({
@@ -30,6 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <title>Anjan Basnet</title>
+
       <body className={spaceGrotesk.className}>
         <ThemeProvider
           attribute="class"
