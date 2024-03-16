@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const HeroSection = () => {
   return (
-    <div className="mt-16 min-h-[50vh] flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row items-center justify-between">
+    <div className="mt-16 min-h-[100vh] flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row items-center justify-between">
       <div className="space-y-10 text-center lg:grid-cols-2 lg:text-left">
         <h1 className="text-4xl lg:text-7xl font-semibold">
           Delighted to meet you! 👋 <br />{" "}
